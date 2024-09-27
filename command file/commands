@@ -1,0 +1,46 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS D:\projects\spring-core\spring-mvc-tailwind-css> node -v
+v20.11.0
+PS D:\projects\spring-core\spring-mvc-tailwind-css> npm -v
+10.8.2
+PS D:\projects\spring-core\spring-mvc-tailwind-css> npm init -y
+Wrote to D:\projects\spring-core\spring-mvc-tailwind-css\package.json:
+
+{
+  "name": "spring-mvc-tailwind-css",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+
+
+
+PS D:\projects\spring-core\spring-mvc-tailwind-css> npm i -D tailwindcss
+
+added 113 packages, and audited 114 packages in 14s
+
+29 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS D:\projects\spring-core\spring-mvc-tailwind-css> npx tailwindcss init
+
+Created Tailwind CSS config file: tailwind.config.js
+PS D:\projects\spring-core\spring-mvc-tailwind-css> npx tailwindcss -i ./src/main/resources/static/input.css -o ./src/main/resources/static/output.css --watch
+
+Rebuilding...
+
+warn - No utility classes were detected in your source files. If this is unexpected, double-check the `content` option in your Tailwind CSS configuration.
+warn - https://tailwindcss.com/docs/content-configuration
+
+Done in 341ms.
